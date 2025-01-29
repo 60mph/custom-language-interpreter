@@ -1,0 +1,8 @@
+procedure proc 
+a b c integer 
+v d h real 
+bi bo integer 
+b 1 1 b + c + - + a = 
+1.1 RTOI c + a = 
+1.1 v + RTOI ITOR RTOI 1 + a = 
+v a = 

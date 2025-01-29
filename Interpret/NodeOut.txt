@@ -1,0 +1,162 @@
+Procedure
+      Begin
+            procedure
+            ProcedureName
+                  ID
+                        proc (Type: ID)
+            ;
+            begin
+      Descriptions
+            var
+            DescrList
+                  Descr
+                        VarList
+                              ID
+                                    a (Type: ID)
+                              , (Type: SPLITTER)
+                              VarList
+                                    ID
+                                          b (Type: ID)
+                                    , (Type: SPLITTER)
+                                    VarList
+                                          ID
+                                                c (Type: ID)
+                        :
+                        Type
+                              integer
+                        ;
+                  DescrList
+                        Descr
+                              VarList
+                                    ID
+                                          v (Type: ID)
+                                    , (Type: SPLITTER)
+                                    VarList
+                                          ID
+                                                d (Type: ID)
+                                          , (Type: SPLITTER)
+                                          VarList
+                                                ID
+                                                      h (Type: ID)
+                              :
+                              Type
+                                    real
+                              ;
+                        DescrList
+                              Descr
+                                    VarList
+                                          ID
+                                                bi (Type: ID)
+                                          , (Type: SPLITTER)
+                                          VarList
+                                                ID
+                                                      bo (Type: ID)
+                                    :
+                                    Type
+                                          integer
+                                    ;
+      Operators
+            Op
+                  ID
+                        a (Type: ID)
+                  = (Type: OPER)
+                  Expr
+                        SimpleExpr
+                              ID
+                                    b (Type: ID)
+                        +
+                        Expr
+                              SimpleExpr
+                                    (
+                                    Expr
+                                          SimpleExpr
+                                                INT_NUM
+                                                      1
+                                          -
+                                          Expr
+                                                SimpleExpr
+                                                      (
+                                                      Expr
+                                                            SimpleExpr
+                                                                  INT_NUM
+                                                                        1
+                                                            +
+                                                            Expr
+                                                                  SimpleExpr
+                                                                        ID
+                                                                              b (Type: ID)
+                                                                  +
+                                                                  Expr
+                                                                        SimpleExpr
+                                                                              ID
+                                                                                    c (Type: ID)
+                                                      )
+                                    )
+                  ;
+            Operators
+                  Op
+                        ID
+                              a (Type: ID)
+                        = (Type: OPER)
+                        Expr
+                              SimpleExpr
+                                    RTOI
+                                    (
+                                    Expr
+                                          SimpleExpr
+                                                REAL
+                                                      1.1
+                                          +
+                                          Expr
+                                                SimpleExpr
+                                                      ID
+                                                            c (Type: ID)
+                                    )
+                        ;
+                  Operators
+                        Op
+                              ID
+                                    a (Type: ID)
+                              = (Type: OPER)
+                              Expr
+                                    SimpleExpr
+                                          RTOI
+                                          (
+                                          Expr
+                                                SimpleExpr
+                                                      ITOR
+                                                      (
+                                                      Expr
+                                                            SimpleExpr
+                                                                  RTOI
+                                                                  (
+                                                                  Expr
+                                                                        SimpleExpr
+                                                                              REAL
+                                                                                    1.1
+                                                                        +
+                                                                        Expr
+                                                                              SimpleExpr
+                                                                                    ID
+                                                                                          v (Type: ID)
+                                                                        +
+                                                                        Expr
+                                                                              SimpleExpr
+                                                                                    INT_NUM
+                                                                                          1
+                                                                  )
+                                                      )
+                                          )
+                              ;
+                        Operators
+                              Op
+                                    ID
+                                          a (Type: ID)
+                                    = (Type: OPER)
+                                    Expr
+                                          SimpleExpr
+                                                ID
+                                                      v (Type: ID)
+                                    ;
+      End
+            end

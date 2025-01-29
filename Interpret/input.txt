@@ -1,0 +1,10 @@
+procedure proc ; 
+begin
+var a , b , c : integer ;
+v, d, h : real ; 
+bi, bo : integer ; 
+a = b + ( 1 - ( 1 + b + c ) ) ;
+a = RTOI ( 1.1 ) + c ;
+a = RTOI ( ITOR ( RTOI ( 1.1 + v ) ) ) + 1 ;
+a = v ;
+end
